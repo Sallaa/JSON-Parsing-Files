@@ -1,1 +1,29 @@
-{"info":{"comparison_page":1,"comparison_id":4,"start_time":"Sun Feb 24 2019 22:28:54 GMT+0900 (Korean Standard Time)","end_time":"Sun Feb 24 2019 22:30:40 GMT+0900 (Korean Standard Time)","consumed_time":105.804},"selection":{"cell_picked":"Empty_18_Cell","cell_name":"Empty_18_Cell","position":{"x":-1.169921875,"y":1.6,"z":-3.221403121948242},"rotation":{"_x":0,"_y":0,"_z":0,"_order":"XYZ"},"world_direction":{"x":0,"y":0,"z":-1}}}
+{
+  "info": {
+    "comparison_page": 5,
+    "comparison_id": 4,
+    "start_time": "Sun Feb 24 2019 22:28:54 GMT+0900 (Korean Standard Time)",
+    "end_time": "Sun Feb 24 2019 22:30:40 GMT+0900 (Korean Standard Time)",
+    "consumed_time": 105.804
+  },
+  "selection": {
+    "cell_picked": "Empty_18_Cell",
+    "cell_name": "Empty_18_Cell",
+    "position": {
+      "x": -1.169921875,
+      "y": 1.6,
+      "z": -3.221403121948242
+    },
+    "rotation": {
+      "_x": 0,
+      "_y": 0,
+      "_z": 0,
+      "_order": "XYZ"
+    },
+    "world_direction": {
+      "x": 0,
+      "y": 0,
+      "z": -1
+    }
+  }
+}

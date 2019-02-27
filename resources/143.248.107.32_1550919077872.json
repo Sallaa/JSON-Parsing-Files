@@ -1,1 +1,29 @@
-{"info":{"comparison_page":1,"comparison_id":10,"start_time":"Sat Feb 23 2019 19:43:43 GMT+0900 (KST)","end_time":"Sat Feb 23 2019 19:51:29 GMT+0900 (KST)","consumed_time":466.175},"selection":{"cell_picked":"Empty_4_Cell","cell_name":"Empty_4_Cell","position":{"x":-1.8174607638875702,"y":1.6,"z":0.9978718464068023},"rotation":{"_x":0,"_y":4.71238898038469,"_z":0,"_order":"XYZ"},"world_direction":{"x":1,"y":0,"z":2.220446049250313e-16}}}
+{
+  "info": {
+    "comparison_page": 5,
+    "comparison_id": 10,
+    "start_time": "Sat Feb 23 2019 19:43:43 GMT+0900 (KST)",
+    "end_time": "Sat Feb 23 2019 19:51:29 GMT+0900 (KST)",
+    "consumed_time": 466.175
+  },
+  "selection": {
+    "cell_picked": "Empty_4_Cell",
+    "cell_name": "Empty_4_Cell",
+    "position": {
+      "x": -1.8174607638875702,
+      "y": 1.6,
+      "z": 0.9978718464068023
+    },
+    "rotation": {
+      "_x": 0,
+      "_y": 4.71238898038469,
+      "_z": 0,
+      "_order": "XYZ"
+    },
+    "world_direction": {
+      "x": 1,
+      "y": 0,
+      "z": 2.220446049250313e-16
+    }
+  }
+}

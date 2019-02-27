@@ -1,1 +1,29 @@
-{"info":{"comparison_page":1,"comparison_id":10,"start_time":"Sat Feb 23 2019 19:15:39 GMT+0900 (대한민국 표준시)","end_time":"Sat Feb 23 2019 19:23:54 GMT+0900 (대한민국 표준시)","consumed_time":495.501},"selection":{"cell_picked":"Empty_332_Cell","cell_name":"Empty_332_Cell","position":{"x":9.386070251464844,"y":1.6,"z":1.1506080627441406},"rotation":{"_x":0,"_y":-10.492919462989876,"_z":0,"_order":"XYZ"},"world_direction":{"x":-0.8763066800438477,"y":0,"z":0.4817536741017446}}}
+{
+  "info": {
+    "comparison_page": 4,
+    "comparison_id": 10,
+    "start_time": "Sat Feb 23 2019 19:15:39 GMT+0900 (대한민국 표준시)",
+    "end_time": "Sat Feb 23 2019 19:23:54 GMT+0900 (대한민국 표준시)",
+    "consumed_time": 495.501
+  },
+  "selection": {
+    "cell_picked": "Empty_332_Cell",
+    "cell_name": "Empty_332_Cell",
+    "position": {
+      "x": 9.386070251464844,
+      "y": 1.6,
+      "z": 1.1506080627441406
+    },
+    "rotation": {
+      "_x": 0,
+      "_y": -10.492919462989876,
+      "_z": 0,
+      "_order": "XYZ"
+    },
+    "world_direction": {
+      "x": -0.8763066800438477,
+      "y": 0,
+      "z": 0.4817536741017446
+    }
+  }
+}
