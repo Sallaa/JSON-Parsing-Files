@@ -1,0 +1,64 @@
+{
+  "house94": {
+    "Furniture_3_Cell": {
+      "cell_89_Cell": 14.28,
+      "cell_122_Cell": 14.28,
+      "furniture_4_Cell": 14.28,
+      "furniture_16_Cell": 42.85,
+      "furniture_0_Cell": 14.28
+    },
+    "Empty_191_Cell": {
+      "cell_68_Cell": 14.28,
+      "cell_114_Cell": 28.57,
+      "cell_73_Cell": 14.28,
+      "cell_70_Cell": 14.28,
+      "cell_66_Cell": 14.28,
+      "cell_58_Cell": 14.28
+    },
+    "Empty_174_Cell": {
+      "cell_64_Cell": 14.28,
+      "cell_73_Cell": 42.85,
+      "cell_10_Cell": 14.28,
+      "cell_72_Cell": 14.28,
+      "cell_18_Cell": 14.28
+    },
+    "Empty_156_Cell": {
+      "cell_9_Cell": 14.28,
+      "cell_33_Cell": 14.28,
+      "cell_93_Cell": 14.28,
+      "furniture_13_Cell": 28.57,
+      "cell_92_Cell": 14.28,
+      "cell_34_Cell": 14.28
+    },
+    "Furniture_14_Cell": {
+      "cell_72_Cell": 7.14,
+      "cell_33_Cell": 7.14,
+      "cell_45_Cell": 7.14,
+      "cell_2_Cell": 7.14,
+      "furniture_14_Cell": 28.57,
+      "cell_117_Cell": 7.14,
+      "cell_66_Cell": 14.28,
+      "cell_1_Cell": 7.14,
+      "cell_103_Cell": 14.28
+    },
+    "Furniture_23_Cell": {
+      "furniture_14_Cell": 78.57,
+      "furniture_8_Cell": 7.14,
+      "cell_108_Cell": 7.14,
+      "furniture_13_Cell": 7.14
+    },
+    "Empty_45_Cell": {
+      "cell_59_Cell": 7.14,
+      "cell_116_Cell": 7.14,
+      "cell_45_Cell": 7.14,
+      "cell_4_Cell": 14.28,
+      "cell_12_Cell": 7.14,
+      "cell_44_Cell": 14.28,
+      "cell_69_Cell": 7.14,
+      "cell_28_Cell": 7.14,
+      "cell_108_Cell": 7.14,
+      "cell_39_Cell": 14.28,
+      "cell_34_Cell": 7.14
+    }
+  }
+}

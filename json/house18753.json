@@ -1,0 +1,84 @@
+{
+  "house18753": {
+    "cell_35_Cell": {
+      "Empty_30_Cell": 14.28,
+      "Empty_29_Cell": 14.28,
+      "Empty_36_Cell": 14.28,
+      "Empty_47_Cell": 14.28,
+      "Empty_20_Cell": 14.28,
+      "Empty_37_Cell": 28.57
+    },
+    "furniture_0_Cell": {
+      "Furniture_12_Cell": 14.28,
+      "Empty_44_Cell": 14.28,
+      "Furniture_17_Cell": 28.57,
+      "Empty_16_Cell": 14.28,
+      "Furniture_14_Cell": 14.28,
+      "Empty_53_Cell": 14.28
+    },
+    "cell_44_Cell": {
+      "Empty_103_Cell": 14.28,
+      "Empty_48_Cell": 14.28,
+      "Empty_47_Cell": 28.57,
+      "Empty_97_Cell": 14.28,
+      "Empty_98_Cell": 14.28,
+      "Empty_41_Cell": 14.28
+    },
+    "cell_69_Cell": {
+      "Empty_58_Cell": 14.28,
+      "Furniture_11_Cell": 28.57,
+      "Empty_53_Cell": 14.28,
+      "Empty_20_Cell": 14.28,
+      "Empty_49_Cell": 14.28,
+      "Empty_61_Cell": 14.28
+    },
+    "cell_73_Cell": {
+      "Empty_25_Cell": 28.57,
+      "Empty_26_Cell": 14.28,
+      "Empty_27_Cell": 14.28,
+      "Empty_32_Cell": 28.57,
+      "Empty_33_Cell": 14.28
+    },
+    "cell_43_Cell": {
+      "Empty_103_Cell": 14.28,
+      "Empty_107_Cell": 14.28,
+      "Empty_97_Cell": 14.28,
+      "Empty_53_Cell": 14.28,
+      "Empty_49_Cell": 14.28,
+      "Empty_108_Cell": 28.57
+    },
+    "cell_108_Cell": {
+      "Empty_113_Cell": 14.28,
+      "Empty_58_Cell": 14.28,
+      "Empty_57_Cell": 14.28,
+      "Empty_20_Cell": 14.28,
+      "Empty_33_Cell": 14.28,
+      "Empty_49_Cell": 14.28,
+      "Empty_41_Cell": 14.28
+    },
+    "cell_39_Cell": {
+      "Empty_29_Cell": 14.28,
+      "Empty_44_Cell": 14.28,
+      "Empty_42_Cell": 14.28,
+      "Empty_48_Cell": 28.57,
+      "Empty_35_Cell": 14.28,
+      "Empty_20_Cell": 14.28
+    },
+    "furniture_12_Cell": {
+      "Furniture_19_Cell": 28.57,
+      "Empty_115_Cell": 28.57,
+      "Empty_50_Cell": 14.28,
+      "Empty_120_Cell": 14.28,
+      "Empty_61_Cell": 14.28
+    },
+    "cell_34_Cell": {
+      "Empty_30_Cell": 14.28,
+      "Empty_29_Cell": 14.28,
+      "Empty_36_Cell": 14.28,
+      "Empty_35_Cell": 14.28,
+      "Empty_39_Cell": 14.28,
+      "Empty_40_Cell": 14.28,
+      "Empty_45_Cell": 14.28
+    }
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "house24": {
+    "Empty_56_Cell": {
+      "Empty_169_Cell": 14.28,
+      "Empty_321_Cell": 14.28,
+      "Empty_177_Cell": 14.28,
+      "Empty_32_Cell": 14.28,
+      "Empty_377_Cell": 14.28,
+      "Empty_108_Cell": 14.28,
+      "Empty_112_Cell": 14.28
+    },
+    "Empty_36_Cell": {
+      "Empty_60_Cell": 14.28,
+      "Empty_187_Cell": 14.28,
+      "Empty_132_Cell": 14.28,
+      "Empty_183_Cell": 14.28,
+      "Empty_46_Cell": 14.28,
+      "Furniture_27_Cell": 14.28,
+      "Empty_194_Cell": 14.28
+    },
+    "Empty_146_Cell": {
+      "Empty_224_Cell": 28.57,
+      "Empty_34_Cell": 14.28,
+      "Empty_233_Cell": 14.28,
+      "Furniture_11_Cell": 28.57,
+      "Empty_184_Cell": 14.28
+    },
+    "Empty_142_Cell": {
+      "Empty_238_Cell": 14.28,
+      "Empty_196_Cell": 14.28,
+      "Empty_186_Cell": 14.28,
+      "Empty_240_Cell": 14.28,
+      "Furniture_18_Cell": 14.28,
+      "Empty_237_Cell": 28.57
+    },
+    "Empty_175_Cell": {
+      "Furniture_12_Cell": 14.28,
+      "Empty_215_Cell": 28.57,
+      "Empty_221_Cell": 14.28,
+      "Empty_218_Cell": 14.28,
+      "Empty_73_Cell": 14.28,
+      "Empty_281_Cell": 14.28
+    },
+    "Empty_195_Cell": {
+      "Empty_131_Cell": 28.57,
+      "Empty_121_Cell": 14.28,
+      "Empty_133_Cell": 14.28,
+      "Furniture_23_Cell": 14.28,
+      "Furniture_27_Cell": 28.57
+    },
+    "Empty_16_Cell": {
+      "Empty_60_Cell": 14.28,
+      "Empty_59_Cell": 14.28,
+      "Empty_186_Cell": 14.28,
+      "Empty_183_Cell": 14.28,
+      "Empty_189_Cell": 14.28,
+      "Empty_121_Cell": 14.28,
+      "Empty_193_Cell": 14.28
+    },
+    "Furniture_25_Cell": {
+      "Empty_330_Cell": 28.57,
+      "Empty_295_Cell": 14.28,
+      "Empty_167_Cell": 28.57,
+      "Furniture_23_Cell": 14.28,
+      "Empty_332_Cell": 14.28
+    },
+    "Furniture_5_Cell": {
+      "Empty_139_Cell": 14.28,
+      "Furniture_25_Cell": 42.85,
+      "Empty_128_Cell": 14.28,
+      "Furniture_27_Cell": 28.57
+    },
+    "Empty_12_Cell": {
+      "Empty_188_Cell": 14.28,
+      "Empty_184_Cell": 28.57,
+      "Empty_159_Cell": 14.28,
+      "Empty_186_Cell": 14.28,
+      "Empty_183_Cell": 14.28,
+      "Empty_145_Cell": 14.28
+    }
+  }
+}
