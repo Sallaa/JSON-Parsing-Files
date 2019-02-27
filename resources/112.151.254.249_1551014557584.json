@@ -1,0 +1,29 @@
+{
+  "info": {
+    "comparison_page": 2,
+    "comparison_id": 4,
+    "start_time": "Sun Feb 24 2019 22:20:46 GMT+0900 (Korean Standard Time)",
+    "end_time": "Sun Feb 24 2019 22:22:49 GMT+0900 (Korean Standard Time)",
+    "consumed_time": 122.627
+  },
+  "selection": {
+    "cell_picked": "Empty_48_Cell",
+    "cell_name": "Empty_48_Cell",
+    "position": {
+      "x": 3.780000686645508,
+      "y": 1.6,
+      "z": 3.1000003814697266
+    },
+    "rotation": {
+      "_x": 0,
+      "_y": 0,
+      "_z": 0,
+      "_order": "XYZ"
+    },
+    "world_direction": {
+      "x": 0,
+      "y": 0,
+      "z": -1
+    }
+  }
+}
