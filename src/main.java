@@ -1,45 +1,47 @@
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.math.RoundingMode;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.text.DecimalFormat;
 import java.util.*;
 import java.util.stream.Collectors;
-
-import org.json.simple.*;
-import org.json.simple.parser.JSONParser;
 
 class main {
 
     public static String printJSON(HouseModel house) {
 
-        String message = "";
+        String jsonString = "";
 
 
         JSONObject jsonPositions = new JSONObject();
 
 
-
         for (int i = 0; i < house.positions.size(); i++) {
-//            JSONObject occurences = new JSONObject();
-//            occurences =
+
             jsonPositions.put(house.positions.get(i), new JSONObject(house.cellPicked.get(house.positions.get(i))));
         }
         JSONObject json = new JSONObject();
         json.put(house.name, jsonPositions);
 
-//        JSONArray array = new JSONArray();
-//        JSONObject item = new JSONObject();
-//        item.put("information", "test");
-//        item.put("id", 3);
-//        item.put("name", "course1");
-//        array.add(item);
-//
-//        json.put("course", array);
+        jsonString = json.toString();
 
-        message = json.toString();
 
-        return message;
+        try (FileWriter file = new FileWriter("json/test.json")) {
+
+            file.write(json.toJSONString());
+            file.flush();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return jsonString;
     }
 
 
@@ -89,21 +91,56 @@ class main {
         return houses;
     }
 
+    public static Houses calculateCellPickingPercentage(Houses houses) {
 
-    public static Houses SaveJSONToObj(Houses houses, int idHouse, int idPosition, String cellPicked){
+        for (int i = 0; i < houses.listHouses.size(); i++) {
+            HouseModel house = houses.listHouses.get(i);
+
+            for (int j = 0; j < house.positions.size(); j++) {
+                String cellPosition = house.positions.get(j);
+
+                Iterator it = house.cellPicked.get(cellPosition).entrySet().iterator();
+
+                while (it.hasNext()) {
+                    Map.Entry userCellPicked = (Map.Entry) it.next();
+//                    System.out.println(pair.getKey() + " = " + pair.getValue());
+                    double percentageForCellPicked = (double) userCellPicked.getValue() / house.numberOfDifferentCellsPicked.get(cellPosition).floatValue() * 100;
+                    DecimalFormat decimalFormat = new DecimalFormat("#.##");
+                    decimalFormat.setRoundingMode(RoundingMode.DOWN);
+                    percentageForCellPicked = Double.valueOf(decimalFormat.format(percentageForCellPicked));
+                    System.out.println((String) userCellPicked.getKey());
+                    System.out.println((double) userCellPicked.getValue());
+                    System.out.println(house.numberOfDifferentCellsPicked.get(cellPosition).floatValue());
+                    System.out.println(percentageForCellPicked + "%");
+                    houses.listHouses.get(i).cellPicked.get(cellPosition).replace((String) userCellPicked.getKey(), percentageForCellPicked);
+
+//                    it.remove();
+                }
+            }
+
+        }
+
+        return houses;
+    }
+
+
+    public static Houses SaveJSONToObj(Houses houses, int idHouse, int idPosition, String cellPicked) {
         String strIdPosition = houses.listHouses.get(idHouse - 1).positions.get(idPosition - 1);
 
         System.out.println("House is " + houses.listHouses.get(idHouse - 1).name);
         System.out.println("position is " + strIdPosition);
-        if (houses.listHouses.get(idHouse - 1).cellPicked.get(strIdPosition).get(cellPicked) != null){
-            float occurences = houses.listHouses.get(idHouse - 1).cellPicked.get(strIdPosition).get(cellPicked);
-            houses.listHouses.get(idHouse - 1).cellPicked.get(strIdPosition).replace(cellPicked, occurences++);
-            System.out.println(occurences++);
+        if (houses.listHouses.get(idHouse - 1).cellPicked.get(strIdPosition).get(cellPicked) != null) {
+            double occurrences = houses.listHouses.get(idHouse - 1).cellPicked.get(strIdPosition).get(cellPicked);
+            houses.listHouses.get(idHouse - 1).cellPicked.get(strIdPosition).replace(cellPicked, occurrences + 1);
+            System.out.println(occurrences);
+            System.out.println("new value is :" + houses.listHouses.get(idHouse - 1).cellPicked.get(strIdPosition).get(cellPicked));
         } else {
-            houses.listHouses.get(idHouse - 1).cellPicked.get(strIdPosition).put(cellPicked, 1f);
+            houses.listHouses.get(idHouse - 1).cellPicked.get(strIdPosition).put(cellPicked, 1.0);
 
         }
-        houses.listHouses.get(idHouse - 1).numberOfDifferentCellsPicked++;
+        int nbOfTimeCellPicked = houses.listHouses.get(idHouse - 1).numberOfDifferentCellsPicked.get(strIdPosition);
+        houses.listHouses.get(idHouse - 1).numberOfDifferentCellsPicked.replace(strIdPosition, nbOfTimeCellPicked + 1);
+        System.out.println("idPosition: " + strIdPosition + " ---- " + "nbOfTimeCellPicked: " + (nbOfTimeCellPicked + 1));
         return houses;
     }
 
@@ -124,8 +161,10 @@ class main {
 
         HouseModel house6592 = new HouseModel("house6592", positionsH6592);
 
-        for (int i = 0; i < positionsH6592.size(); i++)
+        for (int i = 0; i < positionsH6592.size(); i++) {
             house6592.cellPicked.put(positionsH6592.get(i), new HashMap<>());
+            house6592.numberOfDifferentCellsPicked.put(positionsH6592.get(i), 0);
+        }
 
 
         List<String> positionsH18753 = new ArrayList<>();
@@ -142,8 +181,10 @@ class main {
 
         HouseModel house18753 = new HouseModel("house18753", positionsH18753);
 
-        for (int i = 0; i < positionsH18753.size(); i++)
+        for (int i = 0; i < positionsH18753.size(); i++) {
             house18753.cellPicked.put(positionsH18753.get(i), new HashMap<>());
+            house18753.numberOfDifferentCellsPicked.put(positionsH18753.get(i), 0);
+        }
 
 
         List<String> positionsH94 = new ArrayList<>();
@@ -160,8 +201,11 @@ class main {
 
         HouseModel house94 = new HouseModel("house94", positionsH94);
 
-        for (int i = 0; i < positionsH94.size(); i++)
+        for (int i = 0; i < positionsH94.size(); i++) {
             house94.cellPicked.put(positionsH94.get(i), new HashMap<>());
+            house94.numberOfDifferentCellsPicked.put(positionsH94.get(i), 0);
+        }
+
 
         List<String> positionsH24 = new ArrayList<>();
         positionsH24.add("Furniture_5_Cell");
@@ -177,15 +221,22 @@ class main {
 
         HouseModel house24 = new HouseModel("house24", positionsH24);
 
-        for (int i = 0; i < positionsH24.size(); i++)
+        for (int i = 0; i < positionsH24.size(); i++) {
             house24.cellPicked.put(positionsH24.get(i), new HashMap<>());
+            house24.numberOfDifferentCellsPicked.put(positionsH24.get(i), 0);
+        }
+
 
         // House model 5 is same as 18753
 
         HouseModel secondHouse18753 = new HouseModel("house18753", positionsH18753);
 
-        for (int i = 0; i < positionsH18753.size(); i++)
+        for (int i = 0; i < positionsH18753.size(); i++) {
             secondHouse18753.cellPicked.put(positionsH18753.get(i), new HashMap<>());
+            secondHouse18753.numberOfDifferentCellsPicked.put(positionsH18753.get(i), 0);
+            System.out.println(positionsH18753.get(i));
+        }
+
 
         Houses houses = new Houses();
         houses.listHouses.add(house6592);
@@ -195,15 +246,16 @@ class main {
         houses.listHouses.add(secondHouse18753);
 
 
-
         try {
             List<Path> jsonFiles = main.ListFilesByStream();
             houses = main.ParseJSONArray(houses, jsonFiles);
         } catch (java.io.IOException e) {
 
         }
+        houses = calculateCellPickingPercentage(houses);
 
-        System.out.println(main.printJSON(house94));
+        System.out.println(main.printJSON(houses.listHouses.get(0)));
+
 
     }
 }
